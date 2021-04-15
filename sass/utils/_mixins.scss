@@ -1,0 +1,12 @@
+// ************* Responsive style ************* //
+@mixin tablet-and-higher {
+    @media screen and (min-width: map-get($breakpoints, tablet)) {
+        @content;
+    }
+}
+
+@mixin desktop-and-higher {
+    @media screen and (min-width: map-get($breakpoints, desktop)) {
+        @content;
+    }
+}

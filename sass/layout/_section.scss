@@ -1,0 +1,39 @@
+section {
+    width: 100vw;
+    height: 100vh;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    > * {
+        position: absolute;
+    }
+
+    p {
+        text-align: center;
+        width: 100%;
+        bottom: 150px;
+        padding: 0 10px;
+        font-size: 14px;
+    }
+
+    img {
+        object-fit: cover;
+        width: 100%;
+        height: 100%;
+    }
+
+    h1 {
+        top: 100px;
+    }
+
+    h2 {
+        top: 150px;
+    }
+}
+
+.chevron-down {
+    width: 25px;
+    height: 25px;
+    bottom: 20px;
+}

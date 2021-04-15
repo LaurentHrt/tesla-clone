@@ -1,0 +1,169 @@
+@font-face {
+  font-family: "Tesla";
+  src: url("../font/TESLA.ttf");
+}
+@font-face {
+  font-family: "Gotham Medium";
+  src: url("../font/Gotham-Medium.otf");
+}
+@font-face {
+  font-family: "Gotham Book";
+  src: url("../font/Gotham Book.otf");
+}
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Gotham Medium, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica Neue, Arial, sans-serif;
+  color: #393c41;
+  margin: 0;
+  padding: 0;
+}
+
+a,
+a:active,
+a:focus {
+  text-decoration: none;
+  color: black;
+}
+
+ul,
+li {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+h1 {
+  font-size: 36px;
+  font-weight: 500;
+  margin: 0;
+  padding: 4px 0;
+  letter-spacing: -0.7px;
+}
+
+h2 {
+  font-family: "Gotham Book";
+  font-size: 14px;
+  font-weight: 400;
+  margin: 0;
+  padding: 0;
+}
+
+h2 a {
+  text-decoration: underline;
+}
+
+p {
+  font-family: "Gotham Book";
+}
+
+header {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  z-index: 9999;
+  margin: 0;
+  padding: 20px;
+  background-color: rgba(0, 0, 0, 0);
+}
+
+.logo {
+  font-family: "Tesla";
+  font-size: 18px;
+}
+
+section {
+  width: 100vw;
+  height: 100vh;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+section > * {
+  position: absolute;
+}
+section p {
+  text-align: center;
+  width: 100%;
+  bottom: 150px;
+  padding: 0 10px;
+  font-size: 14px;
+}
+section img {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+section h1 {
+  top: 100px;
+}
+section h2 {
+  top: 150px;
+}
+
+.chevron-down {
+  width: 25px;
+  height: 25px;
+  bottom: 20px;
+}
+
+footer {
+  bottom: 0;
+}
+footer ul {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+.button-container {
+  width: 100%;
+  display: grid;
+  grid-template-columns: auto;
+  row-gap: 15px;
+  column-gap: 10px;
+  bottom: 27vh;
+  padding: 0 20px;
+}
+
+button {
+  text-transform: uppercase;
+  padding: 5px 40px;
+  border: solid 3px rgba(0, 0, 0, 0);
+  font-size: 12px;
+  border-radius: 50px;
+  width: 100%;
+  text-align: center;
+  background-color: rgba(23, 26, 32, 0.8);
+  color: white;
+  height: 40px;
+}
+
+.button-white {
+  background-color: rgba(255, 255, 255, 0.65);
+  color: #171a20;
+}
+
+nav {
+  text-transform: uppercase;
+}
+
+.desktop-nav1 {
+  display: none;
+}
+
+.desktop-nav2 {
+  display: none;
+}
+
+.burger {
+  width: 17px;
+}
+
+/*# sourceMappingURL=style.css.map */
