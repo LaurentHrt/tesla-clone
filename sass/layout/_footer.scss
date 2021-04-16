@@ -1,8 +1,16 @@
 footer {
+    font-size: 12px;
+    font-family: 'Gotham Book';
     bottom: 0;
     ul {
         display: flex;
         flex-direction: column;
         text-align: center;
+    }
+    li {
+        margin-top: 10px;
+    }
+    li:nth-child(n + 4) {
+        display: none;
     }
 }

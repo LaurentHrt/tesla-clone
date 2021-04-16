@@ -1,8 +1,4 @@
 @font-face {
-  font-family: "Tesla";
-  src: url("../font/TESLA.ttf");
-}
-@font-face {
   font-family: "Gotham Medium";
   src: url("../font/Gotham-Medium.otf");
 }
@@ -39,8 +35,11 @@ h1 {
   font-size: 36px;
   font-weight: 500;
   margin: 0;
-  padding: 4px 0;
+  padding: 4px 20px;
   letter-spacing: -0.7px;
+}
+h1.h1-long {
+  font-size: 27px;
 }
 
 h2 {
@@ -73,47 +72,59 @@ header {
 }
 
 .logo {
-  font-family: "Tesla";
-  font-size: 18px;
+  width: 100px;
+  filter: invert(1);
 }
 
 section {
-  width: 100vw;
+  width: 100%;
   height: 100vh;
   position: relative;
   display: flex;
   flex-direction: column;
   align-items: center;
 }
-section > * {
-  position: absolute;
-}
 section p {
   text-align: center;
-  width: 100%;
-  bottom: 150px;
-  padding: 0 10px;
   font-size: 14px;
 }
-section img {
+section picture {
+  width: 100%;
+  height: 100%;
+}
+section .bg-img {
   object-fit: cover;
   width: 100%;
   height: 100%;
 }
-section h1 {
-  top: 100px;
+
+.top-container {
+  position: absolute;
+  text-align: center;
+  top: 15vh;
 }
-section h2 {
-  top: 150px;
+
+.bottom-container {
+  position: absolute;
+  width: 100%;
+  display: grid;
+  grid-template-columns: auto;
+  row-gap: 15px;
+  column-gap: 10px;
+  justify-items: center;
+  bottom: 20px;
+  padding: 20px 20px;
 }
 
 .chevron-down {
   width: 25px;
   height: 25px;
-  bottom: 20px;
+  bottom: 5vh;
 }
 
 footer {
+  font-size: 12px;
+  font-family: "Gotham Book";
   bottom: 0;
 }
 footer ul {
@@ -121,15 +132,11 @@ footer ul {
   flex-direction: column;
   text-align: center;
 }
-
-.button-container {
-  width: 100%;
-  display: grid;
-  grid-template-columns: auto;
-  row-gap: 15px;
-  column-gap: 10px;
-  bottom: 27vh;
-  padding: 0 20px;
+footer li {
+  margin-top: 10px;
+}
+footer li:nth-child(n+4) {
+  display: none;
 }
 
 button {
