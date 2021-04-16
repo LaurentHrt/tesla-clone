@@ -194,40 +194,28 @@ nav {
   text-transform: uppercase;
 }
 
-.desktop-nav1 {
+.desktop-nav1,
+.desktop-nav2 {
   display: none;
+  margin-right: 20px;
 }
 @media screen and (min-width: 1200px) {
-  .desktop-nav1 {
+  .desktop-nav1,
+.desktop-nav2 {
     display: block;
   }
 }
-.desktop-nav1 ul li {
-  margin-right: 15px;
-}
 @media screen and (min-width: 1200px) {
-  .desktop-nav1 ul {
+  .desktop-nav1 ul,
+.desktop-nav2 ul {
     display: grid;
     grid-auto-flow: column;
     column-gap: 20px;
   }
 }
 
-.desktop-nav2 {
-  display: none;
-  margin-right: 20px;
-}
-@media screen and (min-width: 1200px) {
-  .desktop-nav2 {
-    display: block;
-  }
-}
-@media screen and (min-width: 1200px) {
-  .desktop-nav2 ul {
-    display: grid;
-    grid-auto-flow: column;
-    column-gap: 20px;
-  }
+.desktop-nav1 li {
+  margin-right: 15px;
 }
 
 .burger {
