@@ -9,6 +9,11 @@ header {
     margin: 0;
     padding: 20px;
     background-color: rgba($color: #000000, $alpha: 0);
+
+    div:last-child {
+        display: flex;
+        flex-direction: row;
+    }
 }
 
 .logo {

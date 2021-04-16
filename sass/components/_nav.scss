@@ -4,10 +4,34 @@ nav {
 
 .desktop-nav1 {
     display: none;
+    @include desktop-and-higher {
+        display: block;
+    }
+    ul {
+        li {
+            margin-right: 15px;
+        }
+        @include desktop-and-higher {
+            display: grid;
+            grid-auto-flow: column;
+            column-gap: 20px;
+        }
+    }
 }
 
 .desktop-nav2 {
     display: none;
+    margin-right: 20px;
+    @include desktop-and-higher {
+        display: block;
+    }
+    ul {
+        @include desktop-and-higher {
+            display: grid;
+            grid-auto-flow: column;
+            column-gap: 20px;
+        }
+    }
 }
 
 .burger {

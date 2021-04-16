@@ -35,10 +35,21 @@ section {
     display: grid;
     grid-template-columns: auto;
     row-gap: 15px;
-    column-gap: 10px;
     justify-items: center;
     bottom: 20px;
     padding: 20px 20px;
+}
+
+.button-container {
+    width: 100%;
+    display: grid;
+    grid-template-columns: auto;
+    row-gap: 15px;
+    column-gap: 10px;
+    @include tablet-and-higher {
+        grid-template-columns: auto auto;
+        width: auto;
+    }
 }
 
 .chevron-down {

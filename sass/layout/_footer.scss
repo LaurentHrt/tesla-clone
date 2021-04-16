@@ -6,11 +6,21 @@ footer {
         display: flex;
         flex-direction: column;
         text-align: center;
+        @include tablet-and-higher {
+            flex-direction: row;
+        }
     }
     li {
         margin-top: 10px;
+        @include tablet-and-higher {
+            margin-right: 20px;
+        }
     }
     li:nth-child(n + 4) {
         display: none;
+
+        @include tablet-and-higher {
+            display: block;
+        }
     }
 }
